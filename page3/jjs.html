@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+<!-- 	<meta charset="utf-8"> -->
+<!-- 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<head>
+   <meta charset="UTF-8">
+   <!-- <link rel="shortcut icon" href="media/02SubSymbol (2).png"> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+
+	<title>서울여자대학교 종합정보시스템</title>
+	<link rel="stylesheet" href="jjs8.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+     hr { border: 6px solid #800000;}
+      table.jjs
+      table, td {
+      	width: 100%;
+        border: none;
+        border-collapse: collapse;
+        padding:20px;
+      /*  text-align:center;*/
+        background-color: white;
+        text-align: left;
+      }
+      
+      th {
+      	text-align: left;
+      	background-color: white;
+      	border-bottom: none;
+      }
+
+
+      
+      body div .headerWrapper{
+      	background-color: white;
+      	width: 300px;
+      }
+      {
+      	  	background-color: #e3dbd3;
+      }
+    </style>
+	
+	<link rel="icon" href="jjs_media/favicon.ico"/>
+
+</head>
+
+
+<body>
+
+	<hr>
+
+	<header class="header">	
+	<div class="headerWrapper">
+	<div class="main_logo">
+    <a href="/">
+      	 <img src="jjs_media/logo3.jpg" width= 280px, height=130px alt="서울여자대학교 로고"> </a>
+    </div>
+</div>
+</header>
+
+	<section class="section">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+		<div id="bg" style="padding-left: 295px;">
+			  <div class="swiper-container-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="jjs_media/pic111.jpg"></div>
+            <div class="swiper-slide"><img src="jjs_media/pic222.jpg"></div>
+            <div class="swiper-slide"><img src="jjs_media/pic333.jpg"></div>
+ 
+
+          </div>
+        </div>
+</div>
+
+
+<script>
+   new Swiper( '.swiper-container-swiper', {
+
+   effect : 'fade',
+   speed: 100,
+
+   loop : true,
+   
+   autoplay:{
+      delay:3500,
+      disableOnInteraction: false,
+   }
+   });
+</script>
+
+		<!-- <img src="jjs_media/pic33.png" id=mainImage alt="jjsImage" style="width: 1078px; height: 400px;">
+	</div> -->
+
+    <table class="jjs" style="width:82%; justify-content: center; flex-wrap: nowrap;">
+      <tr>
+        <th colspan="3"><h1 style="color: #800000;" >LOGIN</h1></th>
+       </tr>
+      <tr>
+        <td >	
+        	<form name="fo" method="get">
+	<strong>아 이 디 </strong><input type="text" size="15" value=""><br>
+	<strong>비밀번호</strong><input type="password" size="15" value="">
+			<div class="login">
+			<button type="submit" style="background-color: #800000; color: white; border: 0; outline: 0; width: 80px; height:  60px; font-size: 20px;"><strong>로그인</strong></button></div>
+	</form></td>
+        <td> 
+        아이디는 학번, 교직원번호로 되어 있습니다.<br>
+     <u>개인정보 보호를 위하여 비밀번호는<br>
+     정기적으로 변경 요망</u><p>
+         <button type="submit" style="border: 0; outline:0; width: 100px; height:20px;">비밀번호 찾기</button>
+     </td>
+        <td>
+        	<button type="submit" style="background-color: #FAEBD7; border:1px; width: 140px; height:25px; padding: 5px;  font-size: 15px; color:#800000;"> 
+        		<i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;시스템 사용안내</button><p> <p>
+        	<button type="submit" style="background-color: #FAEBD7; border:1px; width:140px; height:25px; padding: 5px; font-size: 15px; color: #800000;">
+        		<i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;불편사항 신고</button></p></p>
+
+        </td>
+      </tr>
+    </table>
+    <p>
+    <p>
+    </section>
+
+<footer>
+<div class="footer">
+    <div class="footer-wrap">
+	<div class="footer-logo">
+		<a href="http://www.swu.ac.kr" target="blank"><img src="jjs_media/footer.png"></a>
+	</div>
+	<div class="footer-list">
+		<ul class="link">
+			<li><a href="#" style="text-decoration: none;"><strong>개인정보처리방침</strong></a></li>
+			<li><a href="#" style="text-decoration: none;"><strong>보안진단의 날</strong></a></li>
+		</ul>
+		<ul class="info">
+			<li>01797 서울특별시 노원구 화랑로 621 서울여자대학교 Tel. 02-970-5114 / Fax. 02-978-793</li>
+		</ul>
+		Copyright 2013 SEOUL WOMEN'S UNIVERSITY. ALL RIGHTS RESERVED
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="media/02SubSymbol (2).png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+	<title>서울여자대학교</title>
+   <link rel="stylesheet" href="./index1.css">
+   <link rel="icon" href="./favicons.ico" />
+</head>
+<body>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+</body>
+
+<style type="text/css">
+   table.type01{
+      margin: auto;text-align:left;
+      position: relative;
+      left: 1px;
+      top: -140px;
+      border-collapse: separate;
+      border-spacing: 5px 0;
+   }
+
+   table.type01 td{
+      border: 1px solid #f3f3f3;
+      background-color: white;
+      width: 290px;
+      height: 330px;
+      letter-spacing: -1px;
+   }
+
+   table.type01 td:hover {border: 1px solid #922826;}
+
+   .newsContentInner p:hover {text-decoration: underline;}
+
+   .swiper-container{
+      height:250px;
+      width: 1210px;
+      position: relative;
+      top: 140px;
+      right: 980px;
+   }
+
+   .swiper-slide {
+      text-align:center;
+      display:flex; 
+      align-items:center; 
+      justify-content:center;
+   }
+
+   .swiper-container-swiper2 {
+    width:560px;
+    height:80px;
+}
+
+   .swiper-pagination{
+      width: 9px; height: 9px;
+      margin: 10px auto;
+      margin-top: 40px;
+   }
+
+   .swiper-pagination-bullet-active{
+      background-color: #912826;
+      border: 0px solid #912826;
+   }
+
+   .all1{position: relative; top: 100px;
+
+}
+
+   caption{
+      position: relative;
+      bottom: 20px;
+   }
+
+   .photoContentTop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    z-index: 9999;
+   }
+
+   .photoContentTop img {
+      cursor: pointer;
+   }
+
+   hr.hr1{
+      border: 0.01em solid #dcdcdc;
+      background-color:#dcdcdc;
+      width: 610px;
+      position: relative;
+      bottom: -45px;
+      right: 445px;
+   }  
+   .cellBox{position: relative;
+      bottom: 230px;
+      right: 225px;
+      z-index: -9;}
+
+   .title1{position: relative;
+      top: 45px;
+      left: 200px;}
+
+   .date1{font-size: 18px;
+      color: #912826;
+      text-align: center;
+      position: relative;
+      right: 675px;
+      top: 30px;
+      line-height: 330%;
+      font-weight: 800;
+      letter-spacing: -2px;}  
+   
+   .date2{font-size: 18px;
+      color: #912826;
+      position: relative;
+      left: 530px;
+      bottom: 555px;
+      line-height: 330%;
+      font-weight: 800;
+      letter-spacing: -2px;}  
+
+   .desc1{font-size: 16px;
+      color: #555555;
+      text-align: left;
+      position: relative;
+      left: 227px;
+      bottom: 240px;
+      letter-spacing: -1px;
+      line-height: 370%;
+      display: flex;}
+
+   .desc2{font-size: 16px;
+      color: #555555;
+      position: relative;
+      left: 530px;
+      bottom: 645px;
+      letter-spacing: -1px;
+      line-height: 350%;}  
+
+   li{
+      list-style: none;
+      position: relative;
+      bottom: 650px;
+      right: 983px;
+      width: 100%;
+      justify-content: center;
+      display: flex;}
+
+   form{position: relative;
+      top: -460px;
+      right: 1015px;}
+
+   table.type02 {
+      position: relative;
+      top: -620px;
+      right: 985px;
+      border-collapse: separate;
+      border-spacing: 10px 5px;
+      border-color: #f3f3f3;
+      justify-content: center;
+      display: flex;
+   }  
+
+   table.type02 td{
+   width: 215px;
+      heigth: 30px;
+      font-size: 11pt; 
+      padding:  15px 37px;
+      background-color: white;
+   }
+
+   table.type02 td:hover {background-color : #922826; color: white;}
+
+   div.string {
+      font-size: 9pt;
+      color: #e5e5e5;
+      position: relative;
+      bottom: 580px;
+      right: 630px;
+   }
+
+   select{
+      background-color: white;
+      font-size: 9pt;
+      font-weight: 500;
+      letter-spacing: -1px;
+      position: absolute;
+      bottom: 110px;
+      left: 1230px;
+   }
+
+   option{font-size: 9pt;}
+
+   hr{
+      width: 100%;
+      border: 0.1px solid #5c5c5c;
+      position: relative;
+      bottom: 570px;
+      right: 990px;
+      }     
+
+
+</style>
+
+<div class="section board" style="height:255px;
+      width: 100%; 
+      background:white; 
+      position:absolute;
+      top: 1900px;
+      "></div>
+
+<div class="sectionBanner" style="height:700px;
+       width: 100%;
+       background-color: white;
+       position: absolute;
+       top: 2630px;
+       z-index: -10;
+       "></div>
+
+<div1 style=
+      "background-color : #535353;
+      position : absolute;
+      top: 3910px;
+      width : 100%;
+      height : 155px;
+      "></div1>       
+
+<body>
+	<header>
+      <div id="info-nav">
+         <div id="select-language">
+            <span><a href="ENG.html">ENG</a></span>
+            <span><a href="CHN.html">CHN</a></span>
+         </div>
+         <div style="width: 990px;">
+         </div>
+         <div id="info-menu">
+            <span><a href="LOGIN.html">LOGIN</a></span>
+            <span class="grey-accent"><a href="WEBMAIL.html">WEBMAIL</a></span>
+            <span class="grey-accent"><a href="SITEMAP.html">SITEMAP</a></span>
+            <div id="search-box">
+               <a href="SEARCH.html">SEARCH</a>
+               <button>
+                  <img src="./search.png" alt="이미지 없음">
+               </button>
+            </div>
+         </div>
+      </div>
+   </header>
+   <div id="navigation-bar" style="background-color: white;">
+      <div id="dropdown-shown-container">
+         <div id="logo">
+            <a href="logo.html"><img src="http://www.swu.ac.kr/front/layout/header/logo.png"></a>
+         </div>
+         <div id="dropdown-container">
+            <div class="dropdown">
+               <button class="dropdown-button">대학소개</button>
+            </div>
+            <div class="dropdown">
+               <button class="dropdown-button">입학정보</button>
+            </div>
+            <div class="dropdown">
+               <button class="dropdown-button">대학/대학원</button>
+            </div>
+            <div class="dropdown">
+               <button class="dropdown-button">대학생활</button>
+            </div>
+            <div class="dropdown">
+               <button class="dropdown-button">SWU홍보</button>
+            </div>
+            <div class="dropdown">
+               <button class="dropdown-button">열린캠퍼스</button>
+            </div>
+         </div>
+      </div>
+      <div id="dropdown-hidden-container" >
+         <div id="icon-container">
+            <div class="icon-row">
+               <div class="icon">
+                  <a href="#">
+                     <img src="./g_img0.png" alt="이미지없음">
+                     <img src="./g_img0_hover.png" alt="이미지없음">
+                  </a>
+                  <div>종합정보</div>
+               </div>
+               <div class="icon">
+                  <a href="#">
+                     <img src="./g_img1.png" alt="이미지없음">
+                     <img src="./g_img1_hover.png" alt="이미지없음">
+                  </a>
+                  <div>e-Class</div>
+               </div>
+            </div>
+            <div class="icon-row">
+               <div class="icon">
+                  <a href="#">
+                     <img src="./g_img2.png" alt="이미지없음">
+                     <img src="./g_img2_hover.png" alt="이미지없음">
+                  </a>
+                  <div>학생성장지원시스템</div>
+               </div>
+               <div class="icon">
+                  <a href="#">
+                     <img src="./g_img3.png" alt="이미지없음">
+                     <img src="./g_img3_hover.png" alt="이미지없음">
+                  </a>
+                  <div>웹메일</div>
+               </div>
+            </div>
+            <div class="icon-row">
+               <div class="icon">
+                  <a href="#">
+                     <img src="./g_img4.png" alt="이미지없음">
+                     <img src="./g_img4_hover.png" alt="이미지없음">
+                  </a>
+                  <div>전화번호안내</div>
+               </div>
+               <div class="icon">
+                  <a href="#">
+                     <img src="./g_img5.png" alt="이미지없음">
+                     <img src="./g_img5_hover.png" alt="이미지없음">
+                  </a>
+                  <div>오시는 길</div>
+               </div>
+            </div>
+         </div>
+         <div id="dropdown-content-container">
+            <div class="dropdown-content">
+               <a href="#">교육목표</a>
+               <a href="#">역사&비전</a>
+               <a href="#">총장실</a>
+               <a href="#">대학상징</a>
+               <a href="#">대학현황</a>
+               <a href="#">대학발전기금</a>
+               <a href="#">바롬기념관</a>
+               <a href="#">학교법인</a>
+               <a href="#">캠퍼스안내</a>
+               <a href="#">학교오시는길</a>
+            </div>
+            <div class="dropdown-content">
+               <a href="#">대학</a>
+               <a href="#">대학원</a>
+               <a href="#">교육대학원</a>
+               <a href="#">휴먼서비스대학원</a>
+            </div>
+            <div class="dropdown-content">
+               <a href="#">교양대학</a>
+               <a href="#">인문대학</a>
+               <a href="#">사회과학대학</a>
+               <a href="#">자연과학대학</a>
+               <a href="#">미래산업융합대학</a>
+               <a href="#">아트앤디자인스쿨</a>
+               <a href="#">자율전공학부</a>
+               <a href="#">연계융합전공</a>
+               <a href="#">일반대학원</a>
+               <a href="#">특수대학원</a>
+               <a href="#">전문대학원</a>
+            </div>
+            <div class="dropdown-content">
+               <a href="#">학사안내</a>
+               <a href="#">장학</a>
+               <a href="#">학자금대출</a>
+               <a href="#">장애학생지원</a>
+               <a href="#">사회봉사</a>
+               <a href="#">학생지원</a>
+               <a href="#">교직/평생교육사안내</a>
+               <a href="#">국제교류프로그램</a>
+               <a href="#">특색프로그램</a>
+               <a href="#">진로/취업지원</a>
+            </div>
+            <div class="dropdown-content">
+               <a href="#">SWU뉴스</a>
+               <a href="#">SWU포커스</a>
+               <a href="#">언론보도</a>
+               <a href="#">홍보갤러리</a>
+               <a href="#">홍보바롬이</a>
+               <a href="#">홍보소재 제안</a>
+            </div>
+            <div class="dropdown-content">
+               <a href="#">공지사항</a>
+               <a href="#">상담실</a>
+               <a href="#">FAQ</a>
+               <a href="#">자유게시판</a>
+               <a href="#">벼룩시장</a>
+               <a href="#">분실물/습득물</a>
+               <a href="#">학교생활TIP</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="landing">
+      <div id="user-bar" style="z-index: 999;">
+         <div class="user-content" id="student-btn">
+            <img src="./add0.png" alt="이미지없음">
+            <div>재학생</div>
+         </div>
+         <div class="user-content" id="teacher-btn">
+            <img src="./add1.png" alt="이미지없음">
+            <div>교직원</div>
+         </div>
+         <div class="user-content" id="alumis-btn">
+            <img src="./add2.png" alt="이미지없음">
+            <div>동문</div>
+         </div>
+      </div>
+      <div class="user-detail" id="student" style="z-index: 999;">
+         <div class="title-container">
+            <div class="user-title">
+               재학생
+            </div>
+         </div>
+         <div class="user-content-container">
+            <div><a href="#">포털시스템</a></div>
+            <div><a href="#">종합정보시스템</a></div>
+            <div><a href="#">E-Class시스템</a></div>
+            <div><a href="#">학생성장지원시스템</a></div>
+            <div><a href="#">현장실습시스템(인턴십)</a></div>
+            <div><a href="#">도서관</a></div>
+            <div><a href="#">CAT English</a></div>
+            <div><a href="#">시간표/강의실조회</a></div>
+            <div><a href="#">대학원개설과목조회</a></div>
+            <div><a href="#">휴학생활가이드(e-book)</a></div>
+            <div><a href="#">다기능/모바일/국제학생증 발급</a></div>
+         </div>
+      </div>
+      <div class="user-detail" id="teacher" style="z-index: 999;">
+         <div class="title-container">
+            <div class="user-title">
+               교직원
+            </div>
+         </div>
+         <div class="user-content-container" style="z-index: 999;">
+            <div><a href="#">포털시스템</a></div>
+            <div><a href="#">종합정보시스템</a></div>
+            <div><a href="#">E-Class시스템</a></div>
+            <div><a href="#">학생성장지원시스템</a></div>
+            <div><a href="#">현장실습시스템(인턴십)</a></div>
+            <div><a href="#">취업통계시스템</a></div>
+            <div><a href="#">전자문서시스템</a></div>
+            <div><a href="#">연구관리시스템</a></div>
+            <div><a href="#">도서관</a></div>
+         </div>
+      </div>
+      <div class="user-detail" id="alumis" style="z-index: 999;">
+         <div class="title-container">
+            <div class="user-title">
+               동창회
+            </div>
+         </div>
+         <div class="user-content-container" style="z-index: -999;">
+            <div><a href="#">동창회</a></div>
+            <div><a href="#">평생교육원</a></div>
+            <div><a href="#">증명서신청</a></div>
+            <div><a href="#">대학발전기금</a></div>
+            <div><a href="#">도서관이용안내</a></div>
+         </div>
+      </div>
+      <div class="swiper-container0">
+   <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="media/main1.jpg"></div>
+      <div class="swiper-slide"><img src="media/main2.jpg"></div>
+      <div class="swiper-slide"><img src="media/main3.jpg"></div>
+      <div class="swiper-slide"><img src="media/main4.jpg"></div>
+   </div>
+</div>
+<script>
+   new Swiper( '.swiper-container0', {
+
+   effect : 'fade',
+
+   loop : true,
+   
+   autoplay:{
+      delay:2000,
+      disableOnInteraction: false,
+   }
+   });
+</script>
+   </div>
+
+   <div id="corona-img">
+      <a href="#">
+         <img src="./swu-i-02.jpeg" alt="이미지없음">
+      </a>
+   </div>
+   <div id="board-header-container"  style="background-color: white;">
+      <p id="board-header">
+         <span id="board-header-text1">SWU</span>
+         <span id="board-header-text2">NOTICE</span>
+      </p>
+   </div>
+   <div id="board-container"  style="background-color: white;">
+      <div class="board-content-container">
+         <div class="board-section-header">
+            <div class="board-section-header2">
+               <span class="section-header" id="school-btn">학사</span>
+               <span class="section-header" id="scholar-btn">장학</span>
+               <span class="section-header" id="event-btn">행사</span>
+            </div>
+            <span class="section-header section-header-plus">+</span>
+         </div>
+         <div class="gradContent" id="school">
+            <div class="gradContentInner">
+               <a href="#">2021학년도 2학기 시간표 공지 및 수강신청 일정 안내</a>
+               <div class="date-text"><p>2021.07.19</p></div>  
+            </div>
+            <div class="gradContentInner">
+               <a href="#">2021학년도 2학기 학부 수업운영 안내</a>
+               <div class="date-text"><p>2021.07.19</p></div> 
+            </div>
+            <div class="gradContentInner">
+               <a href="#">2021학년도 2학기 타대학 학점교류 신청 안내(서울과학기술대학...)</a>
+               <div class="date-text"><p>2021.07.21<p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">2021학년도 2학기 타대학 학점교류 신청 안내(중앙대학교) - 종료</a>
+               <div class="date-text"><p>2021.07.21</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">2021학년도 2학기 타대학 학점교류 신청 안내(고려대학교) - 종료</a>
+               <div class="date-text"><p>2021.07.19</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">2021학년도 2학기 타대학 학점교류 신청 안내(서울시립대학교) - ...</a>
+               <div class="date-text"><p>2021.07.14</p></div>
+            </div>
+         </div>
+         <div class="gradContent" id="scholar">
+            <div class="gradContentInner">
+               <a href="#">2021학년도 2학기 한국장학재단 푸른등대기부장학금 신청 안내</a>
+               <div class="date-text"><p>2021.07.19</p></div>  
+            </div>
+            <div class="gradContentInner">
+               <a href="#">(잊지말고 꼭 신청하세요~!) 2021학년도 2학기 교내장학금 I(등록금고지서 사전감면 교내장학금) 신청 안내</a>
+               <div class="date-text"><p>2021.07.19</p></div> 
+            </div>
+            <div class="gradContentInner">
+               <a href="#">2021학년도 1학기 장학금 수혜자 중 학적변동(휴학 등) 예정자의 장학금 포기(이월) 신청 안내</a>
+               <div class="date-text"><p>2021.07.21<p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">2021학년도 2학기 교외통합장학금 신청 안내(7/26~8/4)</a>
+               <div class="date-text"><p>2021.07.21</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">2021학년도 2학기 새문안교회장학생 신청 안내(7/26~7/30)</a>
+               <div class="date-text"><p>2021.07.19</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">2021학년도 2학기 학자금 대출 신청 안내(8/23~8/27)</a>
+               <div class="date-text"><p>2021.07.14</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">2021년 2학기 농림축산식품부 장학생 선발 안내(6/21~7/15)</a>
+               <div class="date-text"><p>2021.06.14</p></div>
+            </div>
+         </div>
+         <div class="gradContent" id="event">
+            <div class="gradContentInner">
+               <a href="#">[SI교육센터] 2021학년도 SI(Social Innovation)문제정의 워크숍 & 문제해결 워크숍 모집 안내</a>
+               <div class="date-text"><p>2021.07.19</p></div>  
+            </div>
+            <div class="gradContentInner">
+               <a href="#">2021학년도 하계방학 학습법 워크숍 참여안내</a>
+               <div class="date-text"><p>2021.07.19</p></div> 
+            </div>
+            <div class="gradContentInner">
+               <a href="#">2021학년도 학생창업실 입주팀 모집</a>
+               <div class="date-text"><p>2021.07.21<p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">제3회 교양교육세미나 [온라인 시대, 교양교육 혁신 방향 탐색] 안내</a>
+               <div class="date-text"><p>2021.07.21</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">2021학년도 제2차 명저읽기프로그램-[서평] 심사 결과 안내</a>
+               <div class="date-text"><p>2021.07.19</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">[혁신사업] 2021학년도 제3회 영어스피치대회 개최 안내</a>
+               <div class="date-text"><p>2021.07.14</p></div>
+            </div>
+         </div>
+      </div>
+      <div class="board-content-container">
+         <div class="board-section-header">
+            <div class="board-section-header2">
+               <div class="section-header" id="career-btn">채용/취업</div>
+               <div class="section-header" id="volunteer-btn">일반/봉사</div>
+            </div>
+            <span class="section-header section-header-plus">+</span>
+         </div>
+         <div class="gradContent" id="career">
+            <div class="gradContentInner">
+               <a href="#">[취업경력개발팀] 진로탐색을 위한 직업심리검사 해석 상담 프로그램</a>
+               <div class="date-text"><p>2021.07.13</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">[취업경력개발팀] 2021년 여름방학 진로 및 취업지원 프로그램 안내</a>
+               <div class="date-text"><p>2021.07.23</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">[한국융합기술진흥원] 인공지능 사물탑재 개발자 교육 및 인턴십 3개월 (취업</a>
+               <div class="date-text"><p>2021.07.23</p></div>  
+            </div>
+            <div class="gradContentInner">
+               <a href="#">[중소벤처기업부] K-Startup 그랜드 챌린지 해외 스타트업 국내 청년인턴 글</a>
+               <div class="date-text"><p>2021.07.12</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">[고용노동부] 중소기업 탐방 프로그램 체험실무현장 10기</a>
+               <div class="date-text"><p>2021.07.23</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">[한국기상산업기술원] 2021년도 2차 기상기업 통합 일자리 정보</a>
+               <div class="date-text"><p>2021.07.23</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">[한국소프트웨어산업협회] 2021년 '채용확정형 교육과정' 교육생 모집 </a>
+               <div class="date-text"><p>2021.07.22</p></div>
+            </div>
+         </div>
+         <div class="gradContent" id="volunteer">
+            <div class="gradContentInner">
+               <a href="#">학위복 대여 및 반납 추가 예약 관련 상세 안내문</a>
+               <div class="date-text"><p>2021.07.13</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">[사회봉사] 2021학년도 2학기 사회봉사활동 안내</a>
+               <div class="date-text"><p>2021.07.23</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">학위복 대여 및 반납 관련 상세 안내문</a>
+               <div class="date-text"><p>2021.07.23</p></div>  
+            </div>
+            <div class="gradContentInner">
+               <a href="#">2021학년도 제3차 생명윤리위원회(IRB) 심의 신청 안내</a>
+               <div class="date-text"><p>2021.07.12</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">교내 코로나 확진환자 동선 안내</a>
+               <div class="date-text"><p>2021.07.23</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">[입찰] 「서울여자대학교 편의시설(편의점, 휴게음식점 등) 입점업체 선정」입찰 재</a>
+               <div class="date-text"><p>2021.07.23</p></div>
+            </div>
+            <div class="gradContentInner">
+               <a href="#">2021학년도 하계방학 단축근무 안내</a>
+               <div class="date-text"><p>2021.07.22</p></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="footer-icon-container">
+      <div id="footer-icon">
+         <a href="#">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+         </a>
+         <div>학사일정</div>
+      </div>
+      <div id="footer-icon">
+         <a href="#">
+            <i class="fa fa-book" aria-hidden="true"></i>
+         </a>
+         <div>학교생활 TIP</div>
+      </div>
+      <div id="footer-icon">
+         <a href="#">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+         </a>
+         <div>취업정보</div>
+      </div>
+      <div id="footer-icon">
+         <a href="#">
+            <i class="fa fa-print" aria-hidden="true"></i>
+         </a>
+         <div>증명서 발급</div>
+      </div>
+      <div id="footer-icon">
+         <a href="#">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+         </a>
+         <div>장학안내</div>
+      </div>
+      <div id="footer-icon">
+         <a href="#">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+         </a>
+         <div>VR TOUR</div>
+      </div>
+      <div id="footer-icon">
+         <a href="#">
+            <i class="fa fa-bus" aria-hidden="true"></i>
+         </a>
+         <div>스쿨버스</div>
+      </div>
+      <div id="footer-icon">
+         <a href="#">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+         </a>
+         <div>오시는길</div>
+      </div>
+   </div>
+   <div style="height: 200px; width: 100%;"></div>
+
+   <script>
+      let hidden = document.querySelector("#dropdown-hidden-container")
+      let dropdown = document.querySelector("#dropdown-container")
+
+      function hoverin(showing) {
+         showing.classList.add('show');
+         console.log(showing.classList.contains('show'))
+      }
+
+      function hoverout(showing) {
+         showing.classList.remove('show');
+      }
+
+      dropdown.addEventListener("mouseenter", function() {
+         hoverin(hidden)
+      })
+
+      dropdown.addEventListener("mouseleave", function() {
+         hoverout(hidden)
+      })
+
+      hidden.addEventListener("mouseenter", function() {
+         hoverin(hidden)
+      })
+
+      hidden.addEventListener("mouseleave", function() {
+         hoverout(hidden)
+      })
+
+      let school_btn = document.querySelector("#school-btn")
+      let scholar_btn = document.querySelector("#scholar-btn")
+      let event_btn = document.querySelector("#event-btn")
+      let career_btn = document.querySelector("#career-btn")
+      let volunteer_btn = document.querySelector("#volunteer-btn")
+      let school = document.querySelector("#school")
+      let scholar = document.querySelector("#scholar")
+      let event = document.querySelector("#event")
+      let career = document.querySelector("#career")
+      let volunteer = document.querySelector("#volunteer")
+
+      scholar_btn.addEventListener("mouseenter", function() {
+         hoverin(scholar)
+         school.classList.add('hide');
+      })
+      event_btn.addEventListener("mouseenter", function() {
+         hoverin(event)
+         school.classList.add('hide');
+      })
+      volunteer_btn.addEventListener("mouseenter", function() {
+         hoverin(volunteer)
+         career.classList.add('hide');
+      })
+
+      scholar_btn.addEventListener("mouseleave", function() {
+         hoverout(scholar)
+         school.classList.remove('hide');
+      })
+      event_btn.addEventListener("mouseleave", function() {
+         hoverout(event)
+         school.classList.remove('hide');
+      })
+      volunteer_btn.addEventListener("mouseleave", function() {
+         hoverout(volunteer)
+         career.classList.remove('hide');
+      })
+
+      let student_btn = document.querySelector('#student-btn')
+      let teacher_btn = document.querySelector('#teacher-btn')
+      let alumis_btn = document.querySelector('#alumis-btn')
+      let student = document.querySelector('#student')
+      let teacher = document.querySelector('#teacher')
+      let alumis = document.querySelector('#alumis')
+      student_btn.addEventListener("mouseenter", function() {
+         hoverin(student)
+      })
+      teacher_btn.addEventListener("mouseenter", function() {
+         hoverin(teacher)
+      })
+      alumis_btn.addEventListener("mouseenter", function() {
+         hoverin(alumis)
+      })
+      student_btn.addEventListener("mouseleave", function() {
+         hoverout(student)
+      })
+      teacher_btn.addEventListener("mouseleave", function() {
+         hoverout(teacher)
+      })
+      alumis_btn.addEventListener("mouseleave", function() {
+         hoverout(alumis)
+      })
+      
+      student.addEventListener("mouseenter", function() {
+         hoverin(student)
+      })
+      teacher.addEventListener("mouseenter", function() {
+         hoverin(teacher)
+      })
+      alumis.addEventListener("mouseenter", function() {
+         hoverin(alumis)
+      })
+      student.addEventListener("mouseleave", function() {
+         hoverout(student)
+      })
+      teacher.addEventListener("mouseleave", function() {
+         hoverout(teacher)
+      })
+      alumis.addEventListener("mouseleave", function() {
+         hoverout(alumis)
+      })
+
+   </script>
+</body>
+
+<body bgcolor="#f3f3f3" bottommargin="0">
+
+   <table class="type01">
+      <tr>
+         <td><img src="media/news1.jpg" style="margin:0; padding:0">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;비교과통합관리<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;학생성장지원시스템</p>
+            <p><span style= "color:#666666; font-size:9pt;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SWUNI의 대학생활 필수(시스)템<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;학생성장지원시스템 활용 tip!</p></td></span>
+
+         <td><img src="media/news2.jpg" style="margin:0; padding:0">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;서울여자대학교<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;SI교육센터</p>
+            <p><span style= "color:#666666; font-size:9pt;">
+            &nbsp;&nbsp;&nbsp;&nbsp&nbsp;SWU-SL(Social Innovation)를 실천하는<br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사회혁신가 양성</p></td></span>
+
+         <td><img src="media/news3.jpg" style="margin:0; padding:0">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Power Professor Program<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;사업공고</p>
+            <p><span style= "color:#666666; font-size:9pt;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;서울여자대학교 구성원의 빅데이터 및 AI 활용<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;역량 강화를 지원하기 위한 PPP(Power Professor...</p></td></span>
+         
+         <td><img src="media/news4.jpg" style="margin:0; padding:0">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;대학혁신지원사업<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;202년 대학혁신포럼 행사 안내</p>
+            <p><span style= "color:#666666; font-size:9pt;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021년 대학혁신 포럼 '대학혁신, 오늘과 미래를<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;말하다'</p></td></span>
+      </tr>
+   </table>
+<div class="all1">
+      <div class="section">
+      <div class="inside">
+         <div class="table">
+            <div class="CELL" style="padding-right:40px;">
+            <img src="./media/navi.png"  style="position:relative; left:860px; bottom: 140px;">
+
+            <div class="headline" style="position: relative; left: 350px; top:-160px;">
+               <div class="top" style="font-size: 14pt; letter-spacing: -2px;">언론에 비친
+               <span class="swu" style="font-size: 13pt; font-weight: 800; color: #912826; "><b> SWU</b></span></div>
+               <div class="underbar" style="font-size: 13.5pt; color:#dcdcdc; position:relative; bottom:7px;"><b>__</b></div> 
+
+               <div class="all">
+                  <div class="swiper-container-swiper2">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="media/slide1.png"></div>
+                        <div class="swiper-slide"><img src="media/slide2.png"></div>
+                        <div class="swiper-slide"><img src="media/slide3.png"></div>
+                        <div class="swiper-slide"><img src="media/slide4.png"></div>
+                        <div class="swiper-slide"><img src="media/slide5.png"></div>
+
+                     </div>
+                  </div>
+</div>
+
+
+<script>
+   new Swiper( '.swiper-container-swiper2', {
+
+   effect : 'fade',
+   speed: 100,
+
+   loop : true,
+   
+   autoplay:{
+      delay:3500,
+      disableOnInteraction: false,
+   }
+   });
+</script>
+                  
+
+            <span class="button_" style= "width: 70px; height: 25px; 
+               background-color: #434343; color:white; 
+               position: absolute;
+               top:135px; left: 1px;
+               font-size: 10px;
+               margin-top:11px;
+               text-align: center;
+               line-height:26px;
+                border-radius : 20px;"><strong>MORE</strong></span>  
+               </div>
+            </div>
+
+         <div class="newsContentWrapper" style="position:relative; 
+      bottom:310px; left:990px; ">
+            <div class="newsContent">
+               <div class="newsContentInner" style="font-size: 12pt; color: #555555; letter-spacing: -1px;">
+                  <p>[서울여대대학원] NIA, 서울여대 대학원과 '지능정보사회 전문인...
+                  <span style="font-size: 8pt; color: #999999;  position:absolute; left:530px;"><b>2021.07.19</b></span>   
+                  </p>
+               </div>
+            <div class="newsContent">
+               <div class="newsContentInner" style="font-size: 12pt; color: #555555; letter-spacing: -1px;">
+                  <p>[입학처] [2022 수시특집/서울여자대학교] 수시 1056명 모집. 4차산...
+                  <span style="font-size: 8pt; color: #999999;  position:absolute; left:530px;"><b>2021.07.19</b></span>   
+                  </p>
+               </div>
+            
+            <div class="newsContent">
+               <div class="newsContentInner" style="font-size: 12pt; color: #555555; letter-spacing: -1px;">
+                  <p>
+                     [교양대학] 서울여대, 명저읽기 평가시스템 설명회 가져
+                  <span style="font-size: 8pt; color: #999999;  position:absolute; left:530px;"><b>2021.07.19</b></span>
+                  </p>
+               </div>
+               
+            <div class="newsContent">
+               <div class="newsContentInner" style="font-size: 12pt; color: #555555; letter-spacing: -1px;">
+                  <p>
+                     [김민지,정희원학생] 재정분권 어디까지 왔나? 서울시의회, 공론의...
+                  <span style="font-size: 8pt; color: #999999; position:absolute; left:530px;"><b>2021.07.19</b></span> 
+                  </p>
+               </div>
+               
+            <div class="newsContent">
+               <div class="newsContentInner" style="font-size: 12pt; color: #555555; letter-spacing: -1px;">
+                  <p>
+                     [학생상담센터] 서울여대, 대학생 정신건강·자살예방 위한 상담 지...
+                  <span style="font-size: 8pt; color: #999999; position:absolute; left:530px;"><b>2021.07.19</b></span>
+                  </p>
+               </div>
+            </div>
+         </div>
+      <div class="jum" style="font-size: 10pt; color:#dcdcdc; position:absolute; top:0px; left:-40px; line-height:80%; z-index: 100;">⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br></div></div>
+
+      <table class="type01" style="position: relative; left: -980px; top: 80px; border-collapse: separate; border-spacing: 5px 0;">
+      <caption><span style="font-size: 15pt; color:#912826; font-weight: 600;">SWU</span><span style="font-size: 15pt; color:#8e8e8e; font-weight: 600;"> NEWS</span><img src="./media/plus.png"  style="position:relative; left:535px;"></caption>
+      <tr>
+         <td><img src="media/news5.jpg" style="margin:0; padding:0">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;서울여자대학교, 2021학년도<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;여성리더십 콘텐츠 공모전 진행</p>
+            <p><span style= "color:#666666; font-size:9pt;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;우리 대학은 여성리더십 향상을 위해 '2021학년도<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;여싱리더십 콘텐츠 공모전'을 개최하고, 출품된...</p></td></span>
+
+         <td><img src="media/news6.jpg" style="margin:0; padding:0">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;서울여자대학교 대학원-<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;한국지능정보사회진흥원, 학연·협동...</p>
+            <p><span style= "color:#666666; font-size:9pt;">
+            &nbsp;&nbsp;&nbsp;&nbsp&nbsp;우리 대학 대학원7월 16일(금), NA 서울사무소에서<br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;지능정보사회에 필요한 여성 전문인력 양성을...</p></td></span>
+
+         <td><img src="media/news7.jpg" style="margin:0; padding:0">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;서울여자대학교, 명저읽기<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;평가시스템 사용 설명회 진행</p>
+            <p><span style= "color:#666666; font-size:9pt;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9개 대학과 MOU 체결 후 프로그램 무상 공유 및<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사용 설명회 개최</p></td></span>
+         
+         <td><img src="media/news8.jpg" style="margin:0; padding:0">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;서울여자대학교 학생상담센터-<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;서울시자살예방센터 및...</p>
+            <p><span style= "color:#666666; font-size:9pt;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;우리 대학 학생상담센터는 노원구보건소와<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;생명존중 가치실현 및 자살예방 협력사업 추진을...</p></td></span> 
+      </tr>
+   </table>
+
+   <div class="swiper-container">
+   <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="media/banner1.jpg"></div>
+      <div class="swiper-slide"><img src="media/banner2.jpg"></div>
+      <div class="swiper-slide"><img src="media/banner3.jpg"></div>
+      <div class="swiper-slide"><img src="media/banner4.jpg"></div>
+      <div class="swiper-slide"><img src="media/banner5.jpg"></div>
+      <div class="swiper-slide"><img src="media/banner6.jpg"></div>
+      <div class="swiper-slide"><img src="media/banner7.jpg"></div>
+      <div class="swiper-slide"><img src="media/banner8.jpg"></div>
+   </div>
+
+   <div class="swiper-pagination"></div>
+   </div>
+
+   <script>
+
+   new Swiper('.swiper-container', {
+
+      slidesPerView : 4,
+      spaceBetween : 10, 
+      slidesPerGroup : 1, 
+   
+      autoplay : true,
+      delay: 4000,
+   
+      loopFillGroupWithBlank : true,
+
+      loop : true,
+
+      pagination : {
+         el : '.swiper-pagination',
+         clickable : true, 
+      },
+   });
+   </script>
+
+   <div class="newsContent" style="position: relative; right: 650px; top: 170px">
+                    <div class="galContent">
+                        <div class="photoContentTop">
+                            <span style="font-size: 15pt; color:#912826; font-weight: 600;">SWU</span><span style="font-size: 15pt; color:black; position: relative; right: 860px; letter-spacing: -2px;">홍보동영상</span>
+                            <img src="./media/plus.png" style="position:relative; right:1330px; bottom: 5px;">
+                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LItmgM2Fw5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+    </div>
+
+    
+
+<div class="cellBox">
+         <div class="top">
+            <div class="title1"><span class="swu" style="font-size: 14pt; font-weight: 800; color: #912826; "><b>SWU</b></span><span style="font-size: 15pt; color:black; letter-spacing: -1px;">&nbsp;캘린더</span></div>
+            <hr class="hr1">
+            <img src="./media/plus.png"  style="position:relative; left:800px;">    
+         </div>
+         <div class="cal">
+            <div class="TABLE1">
+               <div class="CELL1">
+                     <div class="date1">03.05 ~ 12.31</div>
+                     <div class="date1">06.21 ~ 08.31</div>
+                     <div class="date1">07.05 ~ 12.13</div>
+                     <div class="date1">07.06 ~ 09.02</div>
+                     <div class="date1">07.06 ~ 09.02</div>
+               </div>
+
+               <div class="CELL1">
+                  <div class="desc1">[전교생 필독] 2021학년도 장애인...</div>
+                  <div class="desc1">2021 여름방학 통학버스 및 편의시설...</div>
+                  <div class="desc1">2021-2 휴학신청 안내</div>
+                  <div class="desc1">2021-2 사회봉사 활동 안내</div>
+                  <div class="desc1">2021-2 사회봉사활동 안내</div>
+               </div>
+
+               <div class="CELL1">  
+                  <div class="date2">07.19 ~ 09.07</div>    
+                  <div class="date2">07.19 ~ 12.31</div>
+               </div>
+
+               <div class="CELL1">
+                  <div class="desc2">2021-2 시간표 공지 및 수강신청 ...</div>
+                  <div class="desc2">2021-2 학부 수업운영 안내</div>
+               </div>
+            </div>
+         </div>
+         <div class="jum2" style="font-size: 10pt; color:#dcdcdc; position:absolute; top:110px; left:500px; line-height:80%; z-index: 100;">⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙<br>⦙</div>
+      </div>
+
+      <div class="all">
+    <li>
+      <img src="media/vr.png">
+   </li>
+
+
+   <table class="type02">
+      <tr>
+         <td ><img src="media/0.png">&nbsp;&nbsp;대학발전기금</td>
+         <td><img src="media/1.png">&nbsp;&nbsp;평생교육원</td>
+         <td><img src="media/2.png">&nbsp;&nbsp;국제교류</td>
+         <td><img src="media/3.png">&nbsp;&nbsp;학생상담센터</td>
+      </tr>
+      <tr>
+         <td><img src="media/4.png">&nbsp;&nbsp;인권센터</td>
+         <td><img src="media/5.png">&nbsp;&nbsp;바롬인성교육</td>
+         <td><img src="media/6.png">&nbsp;&nbsp;도서관</td>
+         <td><img src="media/7.png">&nbsp;&nbsp;입학사정관제</td>
+      </tr>
+      <tr>
+         <td><img src="media/8.png">&nbsp;&nbsp;대학정보공사</td>
+         <td><img src="media/9.png">&nbsp;&nbsp;교양대학</td>
+         <td><img src="media/10.png">&nbsp;&nbsp;소프트웨어중심대학사업</td>
+         <td><img src="media/11.png">&nbsp;&nbsp;여성연구원</td>
+      </tr>
+      <tr>
+         <td><img src="media/12.png">&nbsp;&nbsp;현장실습시스템(인턴십)</td>
+         <td><img src="media/13.png">&nbsp;&nbsp;학사일정</td>
+         <td><img src="media/14.png">&nbsp;&nbsp;학교생활TIP</td>
+         <td><img src="media/15.png">&nbsp;&nbsp;상담실</td>
+      </tr>
+      <tr>
+         <td><img src="media/16.png">&nbsp;&nbsp;총장신문고</td>
+         <td><img src="media/17.png">&nbsp;&nbsp;홍보소재제안</td>
+         <td><img src="media/18.png">&nbsp;&nbsp;오시는 길</td>
+         <td><img src="media/19.png">&nbsp;&nbsp;원격지원서비스</td>
+      </tr>
+   </table>
+
+   <div class="string">
+   <b>개인정보처리방침</b>&nbsp;&nbsp;⦙&nbsp;&nbsp;
+   <b>예결산 및 기타공고</b>&nbsp;&nbsp;⦙&nbsp;&nbsp;
+   <b>정보공개</b>&nbsp;&nbsp;⦙&nbsp;&nbsp;
+   <b>시스템불편사항신고</b>
+</div>
+
+<div1>   
+   <form>
+      <select name="site" style="width:295px; height:30px;">   
+         <option value="1" selected>&nbsp;&nbsp;관련기관 사이트</option>
+         <option value="2">&nbsp;&nbsp;도서관</option>
+         <option value="3">&nbsp;&nbsp;표절검사프로그램</option>
+         <option value="4">&nbsp;&nbsp;---------------------</option>
+         <option value="5">&nbsp;&nbsp;샬롬하우스(기숙사)</option>
+         <option value="7">&nbsp;&nbsp;국제생활관(기숙사)</option>
+         <option value="8">&nbsp;&nbsp;현장실습시스템(인턴십)</option>
+         <option value="9">&nbsp;&nbsp;교목실</option>
+         <option value="10">&nbsp;&nbsp;인권센터</option>
+         <option value="11">&nbsp;&nbsp;학생상담센터</option>
+         <option value="12">&nbsp;&nbsp;평생교육원</option>
+         <option value="13">&nbsp;&nbsp;평생교육원(ICT강좌)</option>
+         <option value="14">&nbsp;&nbsp;교수⋅학습센터</option>
+         <option value="15">&nbsp;&nbsp;교양대학</option>
+         <option value="16">&nbsp;&nbsp;교직과정</option>
+         <option value="17">&nbsp;&nbsp;교양영어</option>
+         <option value="18">&nbsp;&nbsp;국제교류단</option>
+         <option value="19">&nbsp;&nbsp;한국어교육센터</option>
+         <option value="20">&nbsp;&nbsp;바롬인성교육부</option>
+         <option value="21">&nbsp;&nbsp;바롬인성교육연구소</option>
+         <option value="22">&nbsp;&nbsp;자율전공학부</option>
+         <option value="23">&nbsp;&nbsp;정보보호특성화사업단</option>
+         <option value="24">&nbsp;&nbsp;---------------------</option>
+         <option value="25">&nbsp;&nbsp;총학생회</option>
+         <option value="26">&nbsp;&nbsp;동아리연합회</option>
+         <option value="27">&nbsp;&nbsp;졸업준비위원회</option>
+         <option value="28">&nbsp;&nbsp;학보사</option>
+         <option value="29">&nbsp;&nbsp;---------------------</option>
+         <option value="30">&nbsp;&nbsp;박물관</option>
+         <option value="31">&nbsp;&nbsp;연구정보/산학협력단</option>
+         <option value="32">&nbsp;&nbsp;취업통계시스템</option>
+         <option value="33">&nbsp;&nbsp;창업보육⋅교육센터</option>
+         <option value="34">&nbsp;&nbsp;연구실 안전관리</option>
+         <option value="35">&nbsp;&nbsp;서울여대대학교회</option>
+         <option value="36">&nbsp;&nbsp;대학로 아름⋅다움관</option>
+         <option value="37">&nbsp;&nbsp;Cyber동창회</option>
+         <input type="button" value="이동" 
+         style= "width: 48px; height: 30px; 
+               background-color: #666666; color:white; 
+               border: 0; outline: 0;
+               position: absolute;
+               bottom:110px;
+               left:1530px;">
+      </select>
+   </form>
+</div1>
+
+<div2>
+   <hr>
+   <span style="color:#aaaaaa; font-size: 11pt; position: relative;
+   top: -575px; left: -630px;">
+   01797 서울특별시 노원구 화랑구 621 서울여자대학교 <b>TEL</b> 02-970-5114 <b>FAX</b> 02-3399-2843</span>
+
+   <span style="color:#7d7d7d; font-size: 8pt; position: relative; top: -560px; right:1240px;"><b>COPYRIGHT(C) SEOUL WOMEN'S UNIVERSITY. ALL RIGHT RESERVED.</b></span>
+</div2>
+
+<div3 style="position: relative; top:-550px; right:620px">
+   <img src="media/social1.png">
+   <img src="media/social2.png">
+   <img src="media/social3.png">
+   <img src="media/social4.png">
+</div3>
+</div>
+</body>
+</html>
